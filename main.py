@@ -75,12 +75,9 @@ def Power_output(interpolation_method, wind_speed, power):
 
     return power_output
 
-    
-
 if __name__ == "__main__":
-    # Example using input wind speed equal to 10.2 m/s
-    wind_speed = 10.2
-    interpolation_method = 'linear'  # Change to 'cubic' for cubic interpolation
+
+
     power_output = Power_output(interpolation_method, wind_speed, rated_power)
 
     print("Power output at wind speed of", wind_speed, "m/s is", round(Power_output('linear', wind_speed, rated_power), 4), "MW using linear interpolation.")
